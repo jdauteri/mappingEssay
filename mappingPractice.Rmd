@@ -1,0 +1,127 @@
+---
+title: "mappingEssay"
+author: "Jessica"
+date: "4/4/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(sf)
+library(leaflet)
+library(tidyverse)
+```
+
+```{r}
+#reading shapefiles
+county_data <- st_read("US_county_2010.shp", stringsAsFactors = FALSE)
+
+states_1990 <- st_read("US_state_1990.shp", stringsAsFactors = FALSE)
+states_2000 <- st_read("US_state_2000.shp", stringsAsFactors = FALSE)
+states_2010 <- st_read("US_state_2010.shp", stringsAsFactors = FALSE)
+```
+
+```{r}
+#read csv and change to Cajun
+states_census <- read_csv("nhgis0001_ds175_2010_state.csv")
+```
+
+```{r}
+#restrict map to Louisiana
+louisiana_1980 <- states_1980 %>% 
+  filter(STATENAM == "Louisiana") %>% 
+  st_transform(4326)
+
+louisiana_1990 <- states_1990 %>% 
+  filter(STATENAM == "Louisiana") %>% 
+  st_transform(4326)
+
+louisiana_2000 <- states_2000 %>% 
+  filter(STATENAM == "Louisiana") %>% 
+  st_transform(4326)
+
+louisiana_2010 <- states_2010 %>% 
+  filter(NAME10 == "Louisiana") %>% 
+  st_transform(4326)
+```
+
+```{r} 
+#map Cajun to Louisiana map 1980
+states_with_data_2010 <- louisiana_2010 %>% 
+  left_join(states_census, by = c("NAME10" = "STATE"))
+
+census_pal <- colorBin("OrRd",
+                       domain = states_with_data_2010$IIKE025,
+                       bins = 7, na.color = "#808080")
+
+leaflet(states_with_data_2010) %>% 
+  addPolygons(fillColor = ~census_pal(IIKE025),
+              fillOpacity = 1,
+              color = "black",
+              opacity = 1,
+              weight = 1) %>% 
+  addLegend("bottomright", pal = census_pal,
+            values = ~IIKE025, opacity = 1,
+            title = "Cajuns in 1980")
+```
+
+```{r} 
+#map Cajun to Louisiana map 1990
+states_with_data_1990 <- louisiana_1990 %>% 
+  left_join(census_1990, by = c("STATENAM" = "STATE"))
+
+census_pal <- colorBin("OrRd",
+                       domain = states_with_data_1990$Cajun,
+                       bins = 7, na.color = "#808080")
+
+leaflet(states_with_data_1990) %>% 
+  addTiles() %>% 
+  addPolygons(fillColor = ~census_pal(Cajun),
+              fillOpacity = 1,
+              color = "black",
+              opacity = 1,
+              weight = 1) %>% 
+  addLegend("bottomright", pal = census_pal,
+            values = ~Cajun, opacity = 1,
+            title = "Cajuns in 1990")
+```
+
+```{r} 
+#map Cajun to Louisiana map 2000
+states_with_data_2000 <- louisiana_2000 %>% 
+  left_join(census_2000, by = c("STATENAM" = "STATE"))
+
+census_pal <- colorBin("OrRd",
+                       domain = states_with_data_2000$Cajun,
+                       bins = 7, na.color = "#808080")
+
+leaflet(states_with_data_2000) %>% 
+  addPolygons(fillColor = ~census_pal(Cajun),
+              fillOpacity = 1,
+              color = "black",
+              opacity = 1,
+              weight = 1) %>% 
+  addLegend("bottomright", pal = census_pal,
+            values = ~Cajun, opacity = 1,
+            title = "Cajuns in 2000")
+```
+
+```{r} 
+#map Cajun to Louisiana map 2010
+states_with_data_2010 <- louisiana_2010 %>% 
+  left_join(census_2010, by = c("NAME10" = "STATE"))
+
+census_pal <- colorBin("OrRd",
+                       domain = states_with_data_2010$IIKE025,
+                       bins = 7, na.color = "#808080")
+
+leaflet(states_with_data_2010) %>% 
+  addTiles() %>% 
+  addPolygons(fillColor = ~census_pal(IIKE025),
+              fillOpacity = 1,
+              color = "black",
+              opacity = 1,
+              weight = 1) %>% 
+  addLegend("bottomright", pal = census_pal,
+            values = ~IIKE025, opacity = 1,
+            title = "Cajuns in 2010")
+```

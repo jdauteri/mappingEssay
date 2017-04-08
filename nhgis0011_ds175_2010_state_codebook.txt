@@ -1,0 +1,341 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0011_ds175_2010_state'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2010
+Geographic level: State
+Dataset:          2010 American Community Survey: 1-Year Data
+   NHGIS code:    2010_ACS1
+   NHGIS ID:      ds175
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Total Ancestry Reported
+   Universe:    Total ancestry categories tallied for people with one or more ancestry categories reported
+   Source code: B04003
+   NHGIS code:  IIM
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        REGIONA:     Region Code
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTYA:     County Code
+        COUSUBA:     County Subdivision Code
+        PLACEA:      Place Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSAA:        Combined Statistical Area Code
+        METDIVA:     Metropolitan Division Code
+        NECTAA:      New England City and Town Area Code
+        CNECTAA:     Combined New England City and Town Area Code
+        NECTADIVA:   NECTA Division Code
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (111th Congress) Code
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNIA:      School District (Unified)/Remainder Code
+        PUMA5A:      Public Use Microdata Sample Area (PUMA) Code
+ 
+Data Type (E):
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Total Ancestry Reported
+    Universe:    Total ancestry categories tallied for people with one or more ancestry categories reported
+    Source code: B04003
+    NHGIS code:  IIM
+        IIME001:     Total
+        IIME002:     Afghan
+        IIME003:     Albanian
+        IIME004:     Alsatian
+        IIME005:     American
+        IIME006:     Arab
+        IIME007:     Arab: Egyptian
+        IIME008:     Arab: Iraqi
+        IIME009:     Arab: Jordanian
+        IIME010:     Arab: Lebanese
+        IIME011:     Arab: Moroccan
+        IIME012:     Arab: Palestinian
+        IIME013:     Arab: Syrian
+        IIME014:     Arab: Arab
+        IIME015:     Arab: Other Arab
+        IIME016:     Armenian
+        IIME017:     Assyrian/Chaldean/Syriac
+        IIME018:     Australian
+        IIME019:     Austrian
+        IIME020:     Basque
+        IIME021:     Belgian
+        IIME022:     Brazilian
+        IIME023:     British
+        IIME024:     Bulgarian
+        IIME025:     Cajun
+        IIME026:     Canadian
+        IIME027:     Carpatho Rusyn
+        IIME028:     Celtic
+        IIME029:     Croatian
+        IIME030:     Cypriot
+        IIME031:     Czech
+        IIME032:     Czechoslovakian
+        IIME033:     Danish
+        IIME034:     Dutch
+        IIME035:     Eastern European
+        IIME036:     English
+        IIME037:     Estonian
+        IIME038:     European
+        IIME039:     Finnish
+        IIME040:     French (except Basque)
+        IIME041:     French Canadian
+        IIME042:     German
+        IIME043:     German Russian
+        IIME044:     Greek
+        IIME045:     Guyanese
+        IIME046:     Hungarian
+        IIME047:     Icelander
+        IIME048:     Iranian
+        IIME049:     Irish
+        IIME050:     Israeli
+        IIME051:     Italian
+        IIME052:     Latvian
+        IIME053:     Lithuanian
+        IIME054:     Luxemburger
+        IIME055:     Macedonian
+        IIME056:     Maltese
+        IIME057:     New Zealander
+        IIME058:     Northern European
+        IIME059:     Norwegian
+        IIME060:     Pennsylvania German
+        IIME061:     Polish
+        IIME062:     Portuguese
+        IIME063:     Romanian
+        IIME064:     Russian
+        IIME065:     Scandinavian
+        IIME066:     Scotch-Irish
+        IIME067:     Scottish
+        IIME068:     Serbian
+        IIME069:     Slavic
+        IIME070:     Slovak
+        IIME071:     Slovene
+        IIME072:     Soviet Union
+        IIME073:     Subsaharan African
+        IIME074:     Subsaharan African: Cape Verdean
+        IIME075:     Subsaharan African: Ethiopian
+        IIME076:     Subsaharan African: Ghanaian
+        IIME077:     Subsaharan African: Kenyan
+        IIME078:     Subsaharan African: Liberian
+        IIME079:     Subsaharan African: Nigerian
+        IIME080:     Subsaharan African: Senegalese
+        IIME081:     Subsaharan African: Sierra Leonean
+        IIME082:     Subsaharan African: Somalian
+        IIME083:     Subsaharan African: South African
+        IIME084:     Subsaharan African: Sudanese
+        IIME085:     Subsaharan African: Ugandan
+        IIME086:     Subsaharan African: Zimbabwean
+        IIME087:     Subsaharan African: African
+        IIME088:     Subsaharan African: Other Subsaharan African
+        IIME089:     Swedish
+        IIME090:     Swiss
+        IIME091:     Turkish
+        IIME092:     Ukrainian
+        IIME093:     Welsh
+        IIME094:     West Indian (except Hispanic groups)
+        IIME095:     West Indian (except Hispanic groups): Bahamian
+        IIME096:     West Indian (except Hispanic groups): Barbadian
+        IIME097:     West Indian (except Hispanic groups): Belizean
+        IIME098:     West Indian (except Hispanic groups): Bermudan
+        IIME099:     West Indian (except Hispanic groups): British West Indian
+        IIME100:     West Indian (except Hispanic groups): Dutch West Indian
+        IIME101:     West Indian (except Hispanic groups): Haitian
+        IIME102:     West Indian (except Hispanic groups): Jamaican
+        IIME103:     West Indian (except Hispanic groups): Trinidadian and Tobagonian
+        IIME104:     West Indian (except Hispanic groups): U.S. Virgin Islander
+        IIME105:     West Indian (except Hispanic groups): West Indian
+        IIME106:     West Indian (except Hispanic groups): Other West Indian
+        IIME107:     Yugoslavian
+        IIME108:     Other groups
+ 
+Data Type (M):
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Total Ancestry Reported
+    Universe:    Total ancestry categories tallied for people with one or more ancestry categories reported
+    Source code: B04003
+    NHGIS code:  IIM
+        IIMM001:     Total
+        IIMM002:     Afghan
+        IIMM003:     Albanian
+        IIMM004:     Alsatian
+        IIMM005:     American
+        IIMM006:     Arab
+        IIMM007:     Arab: Egyptian
+        IIMM008:     Arab: Iraqi
+        IIMM009:     Arab: Jordanian
+        IIMM010:     Arab: Lebanese
+        IIMM011:     Arab: Moroccan
+        IIMM012:     Arab: Palestinian
+        IIMM013:     Arab: Syrian
+        IIMM014:     Arab: Arab
+        IIMM015:     Arab: Other Arab
+        IIMM016:     Armenian
+        IIMM017:     Assyrian/Chaldean/Syriac
+        IIMM018:     Australian
+        IIMM019:     Austrian
+        IIMM020:     Basque
+        IIMM021:     Belgian
+        IIMM022:     Brazilian
+        IIMM023:     British
+        IIMM024:     Bulgarian
+        IIMM025:     Cajun
+        IIMM026:     Canadian
+        IIMM027:     Carpatho Rusyn
+        IIMM028:     Celtic
+        IIMM029:     Croatian
+        IIMM030:     Cypriot
+        IIMM031:     Czech
+        IIMM032:     Czechoslovakian
+        IIMM033:     Danish
+        IIMM034:     Dutch
+        IIMM035:     Eastern European
+        IIMM036:     English
+        IIMM037:     Estonian
+        IIMM038:     European
+        IIMM039:     Finnish
+        IIMM040:     French (except Basque)
+        IIMM041:     French Canadian
+        IIMM042:     German
+        IIMM043:     German Russian
+        IIMM044:     Greek
+        IIMM045:     Guyanese
+        IIMM046:     Hungarian
+        IIMM047:     Icelander
+        IIMM048:     Iranian
+        IIMM049:     Irish
+        IIMM050:     Israeli
+        IIMM051:     Italian
+        IIMM052:     Latvian
+        IIMM053:     Lithuanian
+        IIMM054:     Luxemburger
+        IIMM055:     Macedonian
+        IIMM056:     Maltese
+        IIMM057:     New Zealander
+        IIMM058:     Northern European
+        IIMM059:     Norwegian
+        IIMM060:     Pennsylvania German
+        IIMM061:     Polish
+        IIMM062:     Portuguese
+        IIMM063:     Romanian
+        IIMM064:     Russian
+        IIMM065:     Scandinavian
+        IIMM066:     Scotch-Irish
+        IIMM067:     Scottish
+        IIMM068:     Serbian
+        IIMM069:     Slavic
+        IIMM070:     Slovak
+        IIMM071:     Slovene
+        IIMM072:     Soviet Union
+        IIMM073:     Subsaharan African
+        IIMM074:     Subsaharan African: Cape Verdean
+        IIMM075:     Subsaharan African: Ethiopian
+        IIMM076:     Subsaharan African: Ghanaian
+        IIMM077:     Subsaharan African: Kenyan
+        IIMM078:     Subsaharan African: Liberian
+        IIMM079:     Subsaharan African: Nigerian
+        IIMM080:     Subsaharan African: Senegalese
+        IIMM081:     Subsaharan African: Sierra Leonean
+        IIMM082:     Subsaharan African: Somalian
+        IIMM083:     Subsaharan African: South African
+        IIMM084:     Subsaharan African: Sudanese
+        IIMM085:     Subsaharan African: Ugandan
+        IIMM086:     Subsaharan African: Zimbabwean
+        IIMM087:     Subsaharan African: African
+        IIMM088:     Subsaharan African: Other Subsaharan African
+        IIMM089:     Swedish
+        IIMM090:     Swiss
+        IIMM091:     Turkish
+        IIMM092:     Ukrainian
+        IIMM093:     Welsh
+        IIMM094:     West Indian (except Hispanic groups)
+        IIMM095:     West Indian (except Hispanic groups): Bahamian
+        IIMM096:     West Indian (except Hispanic groups): Barbadian
+        IIMM097:     West Indian (except Hispanic groups): Belizean
+        IIMM098:     West Indian (except Hispanic groups): Bermudan
+        IIMM099:     West Indian (except Hispanic groups): British West Indian
+        IIMM100:     West Indian (except Hispanic groups): Dutch West Indian
+        IIMM101:     West Indian (except Hispanic groups): Haitian
+        IIMM102:     West Indian (except Hispanic groups): Jamaican
+        IIMM103:     West Indian (except Hispanic groups): Trinidadian and Tobagonian
+        IIMM104:     West Indian (except Hispanic groups): U.S. Virgin Islander
+        IIMM105:     West Indian (except Hispanic groups): West Indian
+        IIMM106:     West Indian (except Hispanic groups): Other West Indian
+        IIMM107:     Yugoslavian
+        IIMM108:     Other groups
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing NHGIS data (either tabular or GIS)
+  must cite it appropriately. The citation should include the following:
+
+    Minnesota Population Center. National Historical Geographic Information
+    System: Version 11.0 [Database]. Minneapolis: University of Minnesota. 2016.
+    http://doi.org/10.18128/D050.V11.0.
+
+* Publications and research reports employing school attendance areas data
+  (either tabular or GIS) must cite it appropriately. The citation should
+  include the following:
+
+    The College of William and Mary and the Minnesota Population Center.
+    School Attendance Boundary Information System (SABINS): Version 1.0.
+    Minneapolis, MN: University of Minnesota 2011.
+
+* If possible, citations should also include the URL for the NHGIS site:
+
+    https://www.nhgis.org/
+
+* If possible, citations involving school attendance areas should also include
+  the URL for the SABINS site:
+
+    http://www.sabinsdata.org/
+
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+Printed matter should be sent to:
+
+    NHGIS
+    Minnesota Population Center
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
+
+Send electronic material to: nhgis@umn.edu

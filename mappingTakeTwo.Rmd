@@ -1,0 +1,117 @@
+---
+title: "mappingTakeTwo"
+author: "Jessica"
+date: "4/8/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(sf)
+library(leaflet)
+library(tidyverse)
+
+state_map <- st_read("US_state_2000.shp", stringsAsFactors = FALSE)
+
+states_transform <- state_map %>% 
+  filter(STATENAM %in% c("Louisiana", "Texas", "Mississippi", "Alabama", "Florida")) %>%
+  st_transform(4326)
+
+census_1990 <- read_csv("nhgis0014_ds124_1990_state.csv")
+census_2000 <- read_csv("nhgis0012_ds151_2000_county.csv")
+census_2006 <- read_csv("nhgis0011_ds177_20105_2010_state.csv")
+census_2008 <- read_csv("nhgis0011_ds180_20103_2010_state.csv")
+census_2010 <- read_csv("nhgis0011_ds175_2010_state.csv")
+
+states_transform <- state_map %>% 
+  filter(STATENAM %in% c("Louisiana", "Texas", "Mississippi", "Alabama", "Florida")) %>%
+  st_transform(4326)
+```
+
+
+```{r}
+states_with_data_1990 <- states_transform %>% 
+  left_join(census_1990, by = c("STATENAM" = "STATE"))
+
+binpal <- colorBin("Reds", states_with_data_1990$E8M037, 3, pretty = FALSE)
+
+leaflet(states_with_data_1990) %>% 
+  addPolygons(fillColor = ~binpal(E8M037),
+              fillOpacity = 1,
+              color = "black",
+              opacity = 1,
+              weight = 1) %>% 
+  addLegend("bottomright", pal = binpal,
+            values = ~E8M037, opacity = 1,
+            title = "Cajuns in 1990")
+```
+
+```{r}
+states_with_data_2000 <- states_transform %>% 
+  left_join(census_2000, by = c("STATENAM" = "STATE"))
+
+binpal <- colorBin("Reds", states_with_data_2000$GV5001, 3, pretty = FALSE)
+
+leaflet(states_with_data_2000) %>% 
+  addPolygons(fillColor = ~binpal(GV5001),
+              fillOpacity = 1,
+              color = "black",
+              opacity = 1,
+              weight = 1) %>% 
+  addLegend("bottomright", pal = binpal,
+            values = ~GV5001, opacity = 1,
+            title = "Cajuns in 2000")
+```
+
+
+```{r}
+states_with_data_2006 <- states_transform %>% 
+  left_join(census_2006, by = c("STATENAM" = "STATE"))
+
+binpal <- colorBin("Reds", states_with_data_2006$JV3E025, 3, pretty = FALSE)
+
+leaflet(states_with_data_2006) %>% 
+  addPolygons(fillColor = ~binpal(JV3E025),
+              fillOpacity = 1,
+              color = "black",
+              opacity = 1,
+              weight = 1) %>% 
+  addLegend("bottomright", pal = binpal,
+            values = ~JV3E025, opacity = 1,
+            title = "Cajuns in 2006")
+```
+
+```{r}
+states_with_data_2008 <- states_transform %>% 
+  left_join(census_2008, by = c("STATENAM" = "STATE"))
+
+binpal <- colorBin("Reds", states_with_data_2008$KDLE025, 3, pretty = FALSE)
+
+leaflet(states_with_data_2008) %>% 
+  addPolygons(fillColor = ~binpal(KDLE025),
+              fillOpacity = 1,
+              color = "black",
+              opacity = 1,
+              weight = 1) %>% 
+  addLegend("bottomright", pal = binpal,
+            values = ~KDLE025, opacity = 1,
+            title = "Cajuns in 2008")
+```
+
+```{r}
+states_with_data_2010 <- states_transform %>% 
+  left_join(census_2010, by = c("STATENAM" = "STATE"))
+
+binpal <- colorBin("Reds", states_with_data_2010$IIME025, 3, pretty = FALSE)
+
+leaflet(states_with_data_2010) %>% 
+  addPolygons(fillColor = ~binpal(IIME025),
+              fillOpacity = 1,
+              color = "black",
+              opacity = 1,
+              weight = 1) %>% 
+  addLegend("bottomright", pal = binpal,
+            values = ~IIME025, opacity = 1,
+            title = "Cajuns in 2010")
+```
+
+

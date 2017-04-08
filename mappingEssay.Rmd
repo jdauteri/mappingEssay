@@ -1,0 +1,72 @@
+---
+title: "mappingVisualization"
+author: "Jessica"
+date: "4/4/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(sf)
+library(leaflet)
+library(tidyverse)
+
+county_map <- st_read("US_county_2010.shp", stringsAsFactors = FALSE)
+
+census_1980 <- read_csv("nhgis0004_ds110_1980_county.csv") %>% 
+  rename(cajun_total = DTE119)
+census_1990 <- read_csv("nhgis0004_ds124_1990_county.csv") %>% 
+  rename(cajun_1 = E8M001)
+census_1990_2 <- read_csv("nhgis0006_ds124_1990_2_county.csv") %>% 
+  rename(cajun_2 = E8N001)
+census_2000 <- read_csv("nhgis0004_ds151_2000_county.csv") %>% 
+  rename(cajun_1 = GVZ001,
+         cajun_2 = GV2001)
+census_2006 <- read_csv("nhgis0004_ds177_2006_county.csv") %>% 
+  rename(cajun_1 = JV1E025,
+         cajun_2 = JV2E025,
+         cajun_total = JV3E025)
+census_2008 <- read_csv("nhgis0004_ds180_2008_county.csv") %>% 
+  rename(cajun_1 = KDHE025,
+         cajun_total = KDLE025)
+census_2010 <- read_csv("nhgis0004_ds175_2010_county.csv") %>% 
+  rename(cajun_1 = IIIE025)
+
+
+louisiana_map <- county_map %>% 
+  filter(STATEFP10 == 22) %>% 
+  st_transform(4326)
+```
+
+
+
+```{r}
+
+states_with_data_2010 <- county_map %>% 
+  left_join(census_2010, by = c("GISJOIN" = "GISJOIN"))
+
+census_pal <- colorBin("OrRd",
+                       domain = states_with_data_2010$cajun_1,
+                       bins = 7, na.color = "#808080")
+
+leaflet(states_with_data_2010) %>% 
+  addTiles() %>% 
+  addPolygons(fillColor = ~census_pal(cajun_1),
+              fillOpacity = 1,
+              color = "black",
+              opacity = 1,
+              weight = 1) %>% 
+  addLegend("bottomright", pal = census_pal,
+            values = ~cajun_1, opacity = 1,
+            title = "Cajuns in 2010")
+
+
+states_with_data_1980 <- louisiana_1980 %>% 
+  left_join(census_1980, by = c("COUNTY" = "NAMELSAD10"))
+
+states_with_data_1980 <- louisiana_1980 %>% 
+  left_join(census_1990, by = c("STATENAM" = "STATE"))
+
+census_pal <- colorBin("OrRd",
+                       domain = states_with_data_1980$Cajun,
+                       bins = 7, na.color = "#808080")
+```

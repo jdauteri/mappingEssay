@@ -1,0 +1,213 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0014_ds124_1990_state'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             1990
+Geographic level: State
+Dataset:          1990 Census: STF 4a - Sample-Based Detailed Data
+   NHGIS code:    1990_STF4a
+   NHGIS ID:      ds124
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+ 
+Tables:
+ 
+1. Ancestry
+   Universe:    Persons
+   Source code: NPA21
+   NHGIS code:  E8M
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        ANRCA:       Alaska Native Regional Corporation Code
+        RES_ONLYA:   American Indian Reservation [excluding trust lands] Code
+        TRUSTA:      American Indian Reservation [trust lands only] Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        TRACTA:      Census Tract Code
+        C_CITYA:     Consolidated City Code
+        COUNTYA:     County Code
+        CTY_SUBA:    County Subdivision Code
+        DIVISIONA:   Division Code
+        MSA_CMSAA:   Metropolitan Statistical Area/Consolidated Metropolitan Statistical Area Code
+        PLACEA:      Place Code
+        PMSAA:       Primary Metropolitan Statistical Area Code
+        REGIONA:     Region Code
+        STATE:       State Name
+        STATEA:      State Code
+        URB_AREAA:   Urban Area Code
+        ANPSADPI:    Area Name/PSAD Term/Part Indicator
+ 
+Breakdown:
+    Geographic Subarea: Total area (00)
+ 
+    Table 1:     Ancestry
+    Universe:    Persons
+    Source code: NPA21
+    NHGIS code:  E8M
+        E8M001:      First ancestry reported (000-999): Acadian/Cajun (936-938)
+        E8M002:      First ancestry reported (000-999): Albanian (100)
+        E8M003:      First ancestry reported (000-999): Alsatian (000-001)
+        E8M004:      First ancestry reported (000-999): Arab (400-415, 417-418, 421-430, 435-481, 490-499): Egyptian (402-403)
+        E8M005:      First ancestry reported (000-999): Arab (400-415, 417-418, 421-430, 435-481, 490-499): Iraqi (417-418)
+        E8M006:      First ancestry reported (000-999): Arab (400-415, 417-418, 421-430, 435-481, 490-499): Jordanian (421-422)
+        E8M007:      First ancestry reported (000-999): Arab (400-415, 417-418, 421-430, 435-481, 490-499): Lebanese (425)
+        E8M008:      First ancestry reported (000-999): Arab (400-415, 417-418, 421-430, 435-481, 490-499): Moroccan (406-407)
+        E8M009:      First ancestry reported (000-999): Arab (400-415, 417-418, 421-430, 435-481, 490-499): Palestinian (465-467)
+        E8M010:      First ancestry reported (000-999): Arab (400-415, 417-418, 421-430, 435-481, 490-499): Syrian (429-430)
+        E8M011:      First ancestry reported (000-999): Arab (400-415, 417-418, 421-430, 435-481, 490-499): Arab/Arabic (495-499)
+        E8M012:      First ancestry reported (000-999): Arab (400-415, 417-418, 421-430, 435-481, 490-499): Other Arab (400-401, 404-405, 408-415, 423-424, 426-428, 435-464, 468-481, 490-494)
+        E8M013:      First ancestry reported (000-999): Armenian (431-433)
+        E8M014:      First ancestry reported (000-999): Assyrian (482-489)
+        E8M015:      First ancestry reported (000-999): Australian (800-802)
+        E8M016:      First ancestry reported (000-999): Austrian (003-004)
+        E8M017:      First ancestry reported (000-999): Basque (005-007)
+        E8M018:      First ancestry reported (000-999): Belgian (008-010)
+        E8M019:      First ancestry reported (000-999): Brazilian (360-364)
+        E8M020:      First ancestry reported (000-999): British (011-014)
+        E8M021:      First ancestry reported (000-999): Bulgarian (103)
+        E8M022:      First ancestry reported (000-999): Canadian (931-934)
+        E8M023:      First ancestry reported (000-999): Carpatho Russian (104-105)
+        E8M024:      First ancestry reported (000-999): Celtic (099)
+        E8M025:      First ancestry reported (000-999): Cypriot (017-019)
+        E8M026:      First ancestry reported (000-999): Croatian (109-110)
+        E8M027:      First ancestry reported (000-999): Czech (111-113)
+        E8M028:      First ancestry reported (000-999): Czechoslovakian (114)
+        E8M029:      First ancestry reported (000-999): Danish (020, 023)
+        E8M030:      First ancestry reported (000-999): Dutch (021, 029)
+        E8M031:      First ancestry reported (000-999): Eastern European (190)
+        E8M032:      First ancestry reported (000-999): English (015, 022)
+        E8M033:      First ancestry reported (000-999): Estonian (115-116)
+        E8M034:      First ancestry reported (000-999): European (195)
+        E8M035:      First ancestry reported (000-999): Finnish (024-025)
+        E8M036:      First ancestry reported (000-999): French (except Basque) (016, 026-028, 083)
+        E8M037:      First ancestry reported (000-999): French Canadian (935)
+        E8M038:      First ancestry reported (000-999): German (032-045)
+        E8M039:      First ancestry reported (000-999): German Russian (122-123)
+        E8M040:      First ancestry reported (000-999): Greek (046-048)
+        E8M041:      First ancestry reported (000-999): Guyanese (370-374)
+        E8M042:      First ancestry reported (000-999): Hungarian (125-126)
+        E8M043:      First ancestry reported (000-999): Icelander (049)
+        E8M044:      First ancestry reported (000-999): Iranian (416)
+        E8M045:      First ancestry reported (000-999): Irish (050, 081)
+        E8M046:      First ancestry reported (000-999): Israeli (419-420)
+        E8M047:      First ancestry reported (000-999): Italian (030-031, 051-074)
+        E8M048:      First ancestry reported (000-999): Latvian (128)
+        E8M049:      First ancestry reported (000-999): Lithuanian (129)
+        E8M050:      First ancestry reported (000-999): Luxemburger (077)
+        E8M051:      First ancestry reported (000-999): Macedonian (130-131)
+        E8M052:      First ancestry reported (000-999): Maltese (078)
+        E8M053:      First ancestry reported (000-999): New Zealand (803-807)
+        E8M054:      First ancestry reported (000-999): Northern European (183-184)
+        E8M055:      First ancestry reported (000-999): Norwegian (082)
+        E8M056:      First ancestry reported (000-999): Pennsylvania German (929)
+        E8M057:      First ancestry reported (000-999): Polish (142-143)
+        E8M058:      First ancestry reported (000-999): Portuguese (084-086)
+        E8M059:      First ancestry reported (000-999): Romanian (144-147)
+        E8M060:      First ancestry reported (000-999): Russian (148-151)
+        E8M061:      First ancestry reported (000-999): Scandinavian (098)
+        E8M062:      First ancestry reported (000-999): Scotch-Irish (087)
+        E8M063:      First ancestry reported (000-999): Scottish (088)
+        E8M064:      First ancestry reported (000-999): Serbian (152)
+        E8M065:      First ancestry reported (000-999): Slavic (178-180)
+        E8M066:      First ancestry reported (000-999): Slovak (153)
+        E8M067:      First ancestry reported (000-999): Slovene (154-155)
+        E8M068:      First ancestry reported (000-999): Soviet Union (164)
+        E8M069:      First ancestry reported (000-999): Subsaharan African (500-599): Cape Verdean (510-511)
+        E8M070:      First ancestry reported (000-999): Subsaharan African (500-599): Ethiopian (522-524)
+        E8M071:      First ancestry reported (000-999): Subsaharan African (500-599): Ghanian (529)
+        E8M072:      First ancestry reported (000-999): Subsaharan African (500-599): Kenyan (534-537)
+        E8M073:      First ancestry reported (000-999): Subsaharan African (500-599): Liberian (541-542)
+        E8M074:      First ancestry reported (000-999): Subsaharan African (500-599): Nigerian (553-560)
+        E8M075:      First ancestry reported (000-999): Subsaharan African (500-599): Senegalese (564-565)
+        E8M076:      First ancestry reported (000-999): Subsaharan African (500-599): Sierra Leonean (566-567)
+        E8M077:      First ancestry reported (000-999): Subsaharan African (500-599): Somalian (568)
+        E8M078:      First ancestry reported (000-999): Subsaharan African (500-599): South African (570-573)
+        E8M079:      First ancestry reported (000-999): Subsaharan African (500-599): Sudanese (576-581)
+        E8M080:      First ancestry reported (000-999): Subsaharan African (500-599): Ugandan (588)
+        E8M081:      First ancestry reported (000-999): Subsaharan African (500-599): Zairian (591)
+        E8M082:      First ancestry reported (000-999): Subsaharan African (500-599): Zimbabwean (593)
+        E8M083:      First ancestry reported (000-999): Subsaharan African (500-599): African (599)
+        E8M084:      First ancestry reported (000-999): Subsaharan African (500-599): Other Subsaharan African (500-509, 512-521, 525-528, 530-533,538-540, 543-552, 561-563, 569, 574-575, 582-587, 589-590,592, 594-598)
+        E8M085:      First ancestry reported (000-999): Swedish (089-090)
+        E8M086:      First ancestry reported (000-999): Swiss (091-096)
+        E8M087:      First ancestry reported (000-999): Turkish (434)
+        E8M088:      First ancestry reported (000-999): Ukrainian (171-174)
+        E8M089:      First ancestry reported (000-999): United States or American (939-994)
+        E8M090:      First ancestry reported (000-999): Welsh (097)
+        E8M091:      First ancestry reported (000-999): West Indian (excluding Hispanic origin groups) (300-359): Bahamian (300)
+        E8M092:      First ancestry reported (000-999): West Indian (excluding Hispanic origin groups) (300-359): Barbadian (301)
+        E8M093:      First ancestry reported (000-999): West Indian (excluding Hispanic origin groups) (300-359): Belizean (302)
+        E8M094:      First ancestry reported (000-999): West Indian (excluding Hispanic origin groups) (300-359): Bermudan (303)
+        E8M095:      First ancestry reported (000-999): West Indian (excluding Hispanic origin groups) (300-359): British West Indian (321-331)
+        E8M096:      First ancestry reported (000-999): West Indian (excluding Hispanic origin groups) (300-359): Dutch West Indian (310-313)
+        E8M097:      First ancestry reported (000-999): West Indian (excluding Hispanic origin groups) (300-359): Haitian (336-359)
+        E8M098:      First ancestry reported (000-999): West Indian (excluding Hispanic origin groups) (300-359): Jamaican (308-309)
+        E8M099:      First ancestry reported (000-999): West Indian (excluding Hispanic origin groups) (300-359): Trinidadian Tobagonian (314-316)
+        E8M100:      First ancestry reported (000-999): West Indian (excluding Hispanic origin groups) (300-359): U.S. Virgin Islander (317-320)
+        E8M101:      First ancestry reported (000-999): West Indian (excluding Hispanic origin groups) (300-359): West Indian (335)
+        E8M102:      First ancestry reported (000-999): West Indian (excluding Hispanic origin groups) (300-359): Other West Indian (304-307, 332-334)
+        E8M103:      First ancestry reported (000-999): Yugoslavian (176-177)
+        E8M104:      First ancestry reported (000-999): Race or Hispanic origin groups (200-299, 900-928)
+        E8M105:      First ancestry reported (000-999): Other groups (002, 075-076, 079-080, 101-102, 106-108, 117-121,124, 127, 132-141, 156-163, 165-170, 175, 181-182, 185-189,191-194, 196-199, 365-369, 375-399, 600-799, 808-862, 930, 998)
+        E8M106:      First ancestry reported (000-999): Unclassified or not reported (863-899, 995-997, 999)
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing NHGIS data (either tabular or GIS)
+  must cite it appropriately. The citation should include the following:
+
+    Minnesota Population Center. National Historical Geographic Information
+    System: Version 11.0 [Database]. Minneapolis: University of Minnesota. 2016.
+    http://doi.org/10.18128/D050.V11.0.
+
+* Publications and research reports employing school attendance areas data
+  (either tabular or GIS) must cite it appropriately. The citation should
+  include the following:
+
+    The College of William and Mary and the Minnesota Population Center.
+    School Attendance Boundary Information System (SABINS): Version 1.0.
+    Minneapolis, MN: University of Minnesota 2011.
+
+* If possible, citations should also include the URL for the NHGIS site:
+
+    https://www.nhgis.org/
+
+* If possible, citations involving school attendance areas should also include
+  the URL for the SABINS site:
+
+    http://www.sabinsdata.org/
+
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+Printed matter should be sent to:
+
+    NHGIS
+    Minnesota Population Center
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
+
+Send electronic material to: nhgis@umn.edu

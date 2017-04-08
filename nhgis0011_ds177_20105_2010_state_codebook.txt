@@ -1,0 +1,350 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0011_ds177_20105_2010_state'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2006-2010
+Geographic level: State
+Dataset:          2010 American Community Survey: 5-Year Data [2006-2010, Tracts & Larger Areas]
+   NHGIS code:    2006_2010_ACS5b
+   NHGIS ID:      ds177
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Total Ancestry Reported
+   Universe:    Total ancestry categories tallied for people with one or more ancestry categories reported
+   Source code: B04003
+   NHGIS code:  JV3
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        REGIONA:     Region Code
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTYA:     County Code
+        COUSUBA:     County Subdivision Code
+        PLACEA:      Place Code
+        TRACTA:      Census Tract Code
+        CONCITA:     Consolidated City Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        RES_ONLYA:   American Indian Area/Alaska Native Area (Reservation or Statistical Entity Only) Code
+        TRUSTA:      American Indian Reservation with Trust Lands; trust lands only Code
+        AITSCEA:     Tribal Subdivision/Remainder Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSAA:        Combined Statistical Area Code
+        METDIVA:     Metropolitan Division Code
+        NECTAA:      New England City and Town Area Code
+        CNECTAA:     Combined New England City and Town Area Code
+        NECTADIVA:   New England City and Town Area Division Code
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (111th Congress) Code
+        SLDUA:       State Legislative District (Upper Chamber) Code
+        SLDLA:       State Legislative District (Lower Chamber) Code
+        SUBMCDA:     Subminor Civil Division Code
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNIA:      School District (Unified)/Remainder Code
+        PUMA5A:      Public Use Microdata Sample Area (PUMA) Code
+        BTTRA:       Tribal Census Tract Code
+ 
+Data Type (E):
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Total Ancestry Reported
+    Universe:    Total ancestry categories tallied for people with one or more ancestry categories reported
+    Source code: B04003
+    NHGIS code:  JV3
+        JV3E001:     Total
+        JV3E002:     Afghan
+        JV3E003:     Albanian
+        JV3E004:     Alsatian
+        JV3E005:     American
+        JV3E006:     Arab
+        JV3E007:     Arab: Egyptian
+        JV3E008:     Arab: Iraqi
+        JV3E009:     Arab: Jordanian
+        JV3E010:     Arab: Lebanese
+        JV3E011:     Arab: Moroccan
+        JV3E012:     Arab: Palestinian
+        JV3E013:     Arab: Syrian
+        JV3E014:     Arab: Arab
+        JV3E015:     Arab: Other Arab
+        JV3E016:     Armenian
+        JV3E017:     Assyrian/Chaldean/Syriac
+        JV3E018:     Australian
+        JV3E019:     Austrian
+        JV3E020:     Basque
+        JV3E021:     Belgian
+        JV3E022:     Brazilian
+        JV3E023:     British
+        JV3E024:     Bulgarian
+        JV3E025:     Cajun
+        JV3E026:     Canadian
+        JV3E027:     Carpatho Rusyn
+        JV3E028:     Celtic
+        JV3E029:     Croatian
+        JV3E030:     Cypriot
+        JV3E031:     Czech
+        JV3E032:     Czechoslovakian
+        JV3E033:     Danish
+        JV3E034:     Dutch
+        JV3E035:     Eastern European
+        JV3E036:     English
+        JV3E037:     Estonian
+        JV3E038:     European
+        JV3E039:     Finnish
+        JV3E040:     French (except Basque)
+        JV3E041:     French Canadian
+        JV3E042:     German
+        JV3E043:     German Russian
+        JV3E044:     Greek
+        JV3E045:     Guyanese
+        JV3E046:     Hungarian
+        JV3E047:     Icelander
+        JV3E048:     Iranian
+        JV3E049:     Irish
+        JV3E050:     Israeli
+        JV3E051:     Italian
+        JV3E052:     Latvian
+        JV3E053:     Lithuanian
+        JV3E054:     Luxemburger
+        JV3E055:     Macedonian
+        JV3E056:     Maltese
+        JV3E057:     New Zealander
+        JV3E058:     Northern European
+        JV3E059:     Norwegian
+        JV3E060:     Pennsylvania German
+        JV3E061:     Polish
+        JV3E062:     Portuguese
+        JV3E063:     Romanian
+        JV3E064:     Russian
+        JV3E065:     Scandinavian
+        JV3E066:     Scotch-Irish
+        JV3E067:     Scottish
+        JV3E068:     Serbian
+        JV3E069:     Slavic
+        JV3E070:     Slovak
+        JV3E071:     Slovene
+        JV3E072:     Soviet Union
+        JV3E073:     Subsaharan African
+        JV3E074:     Subsaharan African: Cape Verdean
+        JV3E075:     Subsaharan African: Ethiopian
+        JV3E076:     Subsaharan African: Ghanaian
+        JV3E077:     Subsaharan African: Kenyan
+        JV3E078:     Subsaharan African: Liberian
+        JV3E079:     Subsaharan African: Nigerian
+        JV3E080:     Subsaharan African: Senegalese
+        JV3E081:     Subsaharan African: Sierra Leonean
+        JV3E082:     Subsaharan African: Somalian
+        JV3E083:     Subsaharan African: South African
+        JV3E084:     Subsaharan African: Sudanese
+        JV3E085:     Subsaharan African: Ugandan
+        JV3E086:     Subsaharan African: Zimbabwean
+        JV3E087:     Subsaharan African: African
+        JV3E088:     Subsaharan African: Other Subsaharan African
+        JV3E089:     Swedish
+        JV3E090:     Swiss
+        JV3E091:     Turkish
+        JV3E092:     Ukrainian
+        JV3E093:     Welsh
+        JV3E094:     West Indian (except Hispanic groups)
+        JV3E095:     West Indian (except Hispanic groups): Bahamian
+        JV3E096:     West Indian (except Hispanic groups): Barbadian
+        JV3E097:     West Indian (except Hispanic groups): Belizean
+        JV3E098:     West Indian (except Hispanic groups): Bermudan
+        JV3E099:     West Indian (except Hispanic groups): British West Indian
+        JV3E100:     West Indian (except Hispanic groups): Dutch West Indian
+        JV3E101:     West Indian (except Hispanic groups): Haitian
+        JV3E102:     West Indian (except Hispanic groups): Jamaican
+        JV3E103:     West Indian (except Hispanic groups): Trinidadian and Tobagonian
+        JV3E104:     West Indian (except Hispanic groups): U.S. Virgin Islander
+        JV3E105:     West Indian (except Hispanic groups): West Indian
+        JV3E106:     West Indian (except Hispanic groups): Other West Indian
+        JV3E107:     Yugoslavian
+        JV3E108:     Other groups
+ 
+Data Type (M):
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Total Ancestry Reported
+    Universe:    Total ancestry categories tallied for people with one or more ancestry categories reported
+    Source code: B04003
+    NHGIS code:  JV3
+        JV3M001:     Total
+        JV3M002:     Afghan
+        JV3M003:     Albanian
+        JV3M004:     Alsatian
+        JV3M005:     American
+        JV3M006:     Arab
+        JV3M007:     Arab: Egyptian
+        JV3M008:     Arab: Iraqi
+        JV3M009:     Arab: Jordanian
+        JV3M010:     Arab: Lebanese
+        JV3M011:     Arab: Moroccan
+        JV3M012:     Arab: Palestinian
+        JV3M013:     Arab: Syrian
+        JV3M014:     Arab: Arab
+        JV3M015:     Arab: Other Arab
+        JV3M016:     Armenian
+        JV3M017:     Assyrian/Chaldean/Syriac
+        JV3M018:     Australian
+        JV3M019:     Austrian
+        JV3M020:     Basque
+        JV3M021:     Belgian
+        JV3M022:     Brazilian
+        JV3M023:     British
+        JV3M024:     Bulgarian
+        JV3M025:     Cajun
+        JV3M026:     Canadian
+        JV3M027:     Carpatho Rusyn
+        JV3M028:     Celtic
+        JV3M029:     Croatian
+        JV3M030:     Cypriot
+        JV3M031:     Czech
+        JV3M032:     Czechoslovakian
+        JV3M033:     Danish
+        JV3M034:     Dutch
+        JV3M035:     Eastern European
+        JV3M036:     English
+        JV3M037:     Estonian
+        JV3M038:     European
+        JV3M039:     Finnish
+        JV3M040:     French (except Basque)
+        JV3M041:     French Canadian
+        JV3M042:     German
+        JV3M043:     German Russian
+        JV3M044:     Greek
+        JV3M045:     Guyanese
+        JV3M046:     Hungarian
+        JV3M047:     Icelander
+        JV3M048:     Iranian
+        JV3M049:     Irish
+        JV3M050:     Israeli
+        JV3M051:     Italian
+        JV3M052:     Latvian
+        JV3M053:     Lithuanian
+        JV3M054:     Luxemburger
+        JV3M055:     Macedonian
+        JV3M056:     Maltese
+        JV3M057:     New Zealander
+        JV3M058:     Northern European
+        JV3M059:     Norwegian
+        JV3M060:     Pennsylvania German
+        JV3M061:     Polish
+        JV3M062:     Portuguese
+        JV3M063:     Romanian
+        JV3M064:     Russian
+        JV3M065:     Scandinavian
+        JV3M066:     Scotch-Irish
+        JV3M067:     Scottish
+        JV3M068:     Serbian
+        JV3M069:     Slavic
+        JV3M070:     Slovak
+        JV3M071:     Slovene
+        JV3M072:     Soviet Union
+        JV3M073:     Subsaharan African
+        JV3M074:     Subsaharan African: Cape Verdean
+        JV3M075:     Subsaharan African: Ethiopian
+        JV3M076:     Subsaharan African: Ghanaian
+        JV3M077:     Subsaharan African: Kenyan
+        JV3M078:     Subsaharan African: Liberian
+        JV3M079:     Subsaharan African: Nigerian
+        JV3M080:     Subsaharan African: Senegalese
+        JV3M081:     Subsaharan African: Sierra Leonean
+        JV3M082:     Subsaharan African: Somalian
+        JV3M083:     Subsaharan African: South African
+        JV3M084:     Subsaharan African: Sudanese
+        JV3M085:     Subsaharan African: Ugandan
+        JV3M086:     Subsaharan African: Zimbabwean
+        JV3M087:     Subsaharan African: African
+        JV3M088:     Subsaharan African: Other Subsaharan African
+        JV3M089:     Swedish
+        JV3M090:     Swiss
+        JV3M091:     Turkish
+        JV3M092:     Ukrainian
+        JV3M093:     Welsh
+        JV3M094:     West Indian (except Hispanic groups)
+        JV3M095:     West Indian (except Hispanic groups): Bahamian
+        JV3M096:     West Indian (except Hispanic groups): Barbadian
+        JV3M097:     West Indian (except Hispanic groups): Belizean
+        JV3M098:     West Indian (except Hispanic groups): Bermudan
+        JV3M099:     West Indian (except Hispanic groups): British West Indian
+        JV3M100:     West Indian (except Hispanic groups): Dutch West Indian
+        JV3M101:     West Indian (except Hispanic groups): Haitian
+        JV3M102:     West Indian (except Hispanic groups): Jamaican
+        JV3M103:     West Indian (except Hispanic groups): Trinidadian and Tobagonian
+        JV3M104:     West Indian (except Hispanic groups): U.S. Virgin Islander
+        JV3M105:     West Indian (except Hispanic groups): West Indian
+        JV3M106:     West Indian (except Hispanic groups): Other West Indian
+        JV3M107:     Yugoslavian
+        JV3M108:     Other groups
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing NHGIS data (either tabular or GIS)
+  must cite it appropriately. The citation should include the following:
+
+    Minnesota Population Center. National Historical Geographic Information
+    System: Version 11.0 [Database]. Minneapolis: University of Minnesota. 2016.
+    http://doi.org/10.18128/D050.V11.0.
+
+* Publications and research reports employing school attendance areas data
+  (either tabular or GIS) must cite it appropriately. The citation should
+  include the following:
+
+    The College of William and Mary and the Minnesota Population Center.
+    School Attendance Boundary Information System (SABINS): Version 1.0.
+    Minneapolis, MN: University of Minnesota 2011.
+
+* If possible, citations should also include the URL for the NHGIS site:
+
+    https://www.nhgis.org/
+
+* If possible, citations involving school attendance areas should also include
+  the URL for the SABINS site:
+
+    http://www.sabinsdata.org/
+
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+Printed matter should be sent to:
+
+    NHGIS
+    Minnesota Population Center
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
+
+Send electronic material to: nhgis@umn.edu

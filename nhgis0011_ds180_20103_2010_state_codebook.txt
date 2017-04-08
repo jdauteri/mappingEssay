@@ -1,0 +1,341 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0011_ds180_20103_2010_state'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2008-2010
+Geographic level: State
+Dataset:          2010 American Community Survey: 3-Year Data [2008-2010]
+   NHGIS code:    2008_2010_ACS3
+   NHGIS ID:      ds180
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Total Ancestry Reported
+   Universe:    Total ancestry categories tallied for people with one or more ancestry categories reported
+   Source code: B04003
+   NHGIS code:  KDL
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        REGIONA:     Region Code
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTYA:     County Code
+        COUSUBA:     County Subdivision Code
+        PLACEA:      Place Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSAA:        Combined Statistical Area Code
+        METDIVA:     Metropolitan Division Code
+        NECTAA:      New England City and Town Area Code
+        CNECTAA:     Combined New England City and Town Area Code
+        NECTADIVA:   New England City and Town Area Division Code
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (111th Congress) Code
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNIA:      School District (Unified)/Remainder Code
+        PUMA5A:      Public Use Microdata Sample Area (PUMA) Code
+ 
+Data Type (E):
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Total Ancestry Reported
+    Universe:    Total ancestry categories tallied for people with one or more ancestry categories reported
+    Source code: B04003
+    NHGIS code:  KDL
+        KDLE001:     Total
+        KDLE002:     Afghan
+        KDLE003:     Albanian
+        KDLE004:     Alsatian
+        KDLE005:     American
+        KDLE006:     Arab
+        KDLE007:     Arab: Egyptian
+        KDLE008:     Arab: Iraqi
+        KDLE009:     Arab: Jordanian
+        KDLE010:     Arab: Lebanese
+        KDLE011:     Arab: Moroccan
+        KDLE012:     Arab: Palestinian
+        KDLE013:     Arab: Syrian
+        KDLE014:     Arab: Arab
+        KDLE015:     Arab: Other Arab
+        KDLE016:     Armenian
+        KDLE017:     Assyrian/Chaldean/Syriac
+        KDLE018:     Australian
+        KDLE019:     Austrian
+        KDLE020:     Basque
+        KDLE021:     Belgian
+        KDLE022:     Brazilian
+        KDLE023:     British
+        KDLE024:     Bulgarian
+        KDLE025:     Cajun
+        KDLE026:     Canadian
+        KDLE027:     Carpatho Rusyn
+        KDLE028:     Celtic
+        KDLE029:     Croatian
+        KDLE030:     Cypriot
+        KDLE031:     Czech
+        KDLE032:     Czechoslovakian
+        KDLE033:     Danish
+        KDLE034:     Dutch
+        KDLE035:     Eastern European
+        KDLE036:     English
+        KDLE037:     Estonian
+        KDLE038:     European
+        KDLE039:     Finnish
+        KDLE040:     French (except Basque)
+        KDLE041:     French Canadian
+        KDLE042:     German
+        KDLE043:     German Russian
+        KDLE044:     Greek
+        KDLE045:     Guyanese
+        KDLE046:     Hungarian
+        KDLE047:     Icelander
+        KDLE048:     Iranian
+        KDLE049:     Irish
+        KDLE050:     Israeli
+        KDLE051:     Italian
+        KDLE052:     Latvian
+        KDLE053:     Lithuanian
+        KDLE054:     Luxemburger
+        KDLE055:     Macedonian
+        KDLE056:     Maltese
+        KDLE057:     New Zealander
+        KDLE058:     Northern European
+        KDLE059:     Norwegian
+        KDLE060:     Pennsylvania German
+        KDLE061:     Polish
+        KDLE062:     Portuguese
+        KDLE063:     Romanian
+        KDLE064:     Russian
+        KDLE065:     Scandinavian
+        KDLE066:     Scotch-Irish
+        KDLE067:     Scottish
+        KDLE068:     Serbian
+        KDLE069:     Slavic
+        KDLE070:     Slovak
+        KDLE071:     Slovene
+        KDLE072:     Soviet Union
+        KDLE073:     Subsaharan African
+        KDLE074:     Subsaharan African: Cape Verdean
+        KDLE075:     Subsaharan African: Ethiopian
+        KDLE076:     Subsaharan African: Ghanaian
+        KDLE077:     Subsaharan African: Kenyan
+        KDLE078:     Subsaharan African: Liberian
+        KDLE079:     Subsaharan African: Nigerian
+        KDLE080:     Subsaharan African: Senegalese
+        KDLE081:     Subsaharan African: Sierra Leonean
+        KDLE082:     Subsaharan African: Somalian
+        KDLE083:     Subsaharan African: South African
+        KDLE084:     Subsaharan African: Sudanese
+        KDLE085:     Subsaharan African: Ugandan
+        KDLE086:     Subsaharan African: Zimbabwean
+        KDLE087:     Subsaharan African: African
+        KDLE088:     Subsaharan African: Other Subsaharan African
+        KDLE089:     Swedish
+        KDLE090:     Swiss
+        KDLE091:     Turkish
+        KDLE092:     Ukrainian
+        KDLE093:     Welsh
+        KDLE094:     West Indian (except Hispanic groups)
+        KDLE095:     West Indian (except Hispanic groups): Bahamian
+        KDLE096:     West Indian (except Hispanic groups): Barbadian
+        KDLE097:     West Indian (except Hispanic groups): Belizean
+        KDLE098:     West Indian (except Hispanic groups): Bermudan
+        KDLE099:     West Indian (except Hispanic groups): British West Indian
+        KDLE100:     West Indian (except Hispanic groups): Dutch West Indian
+        KDLE101:     West Indian (except Hispanic groups): Haitian
+        KDLE102:     West Indian (except Hispanic groups): Jamaican
+        KDLE103:     West Indian (except Hispanic groups): Trinidadian and Tobagonian
+        KDLE104:     West Indian (except Hispanic groups): U.S. Virgin Islander
+        KDLE105:     West Indian (except Hispanic groups): West Indian
+        KDLE106:     West Indian (except Hispanic groups): Other West Indian
+        KDLE107:     Yugoslavian
+        KDLE108:     Other groups
+ 
+Data Type (M):
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Total Ancestry Reported
+    Universe:    Total ancestry categories tallied for people with one or more ancestry categories reported
+    Source code: B04003
+    NHGIS code:  KDL
+        KDLM001:     Total
+        KDLM002:     Afghan
+        KDLM003:     Albanian
+        KDLM004:     Alsatian
+        KDLM005:     American
+        KDLM006:     Arab
+        KDLM007:     Arab: Egyptian
+        KDLM008:     Arab: Iraqi
+        KDLM009:     Arab: Jordanian
+        KDLM010:     Arab: Lebanese
+        KDLM011:     Arab: Moroccan
+        KDLM012:     Arab: Palestinian
+        KDLM013:     Arab: Syrian
+        KDLM014:     Arab: Arab
+        KDLM015:     Arab: Other Arab
+        KDLM016:     Armenian
+        KDLM017:     Assyrian/Chaldean/Syriac
+        KDLM018:     Australian
+        KDLM019:     Austrian
+        KDLM020:     Basque
+        KDLM021:     Belgian
+        KDLM022:     Brazilian
+        KDLM023:     British
+        KDLM024:     Bulgarian
+        KDLM025:     Cajun
+        KDLM026:     Canadian
+        KDLM027:     Carpatho Rusyn
+        KDLM028:     Celtic
+        KDLM029:     Croatian
+        KDLM030:     Cypriot
+        KDLM031:     Czech
+        KDLM032:     Czechoslovakian
+        KDLM033:     Danish
+        KDLM034:     Dutch
+        KDLM035:     Eastern European
+        KDLM036:     English
+        KDLM037:     Estonian
+        KDLM038:     European
+        KDLM039:     Finnish
+        KDLM040:     French (except Basque)
+        KDLM041:     French Canadian
+        KDLM042:     German
+        KDLM043:     German Russian
+        KDLM044:     Greek
+        KDLM045:     Guyanese
+        KDLM046:     Hungarian
+        KDLM047:     Icelander
+        KDLM048:     Iranian
+        KDLM049:     Irish
+        KDLM050:     Israeli
+        KDLM051:     Italian
+        KDLM052:     Latvian
+        KDLM053:     Lithuanian
+        KDLM054:     Luxemburger
+        KDLM055:     Macedonian
+        KDLM056:     Maltese
+        KDLM057:     New Zealander
+        KDLM058:     Northern European
+        KDLM059:     Norwegian
+        KDLM060:     Pennsylvania German
+        KDLM061:     Polish
+        KDLM062:     Portuguese
+        KDLM063:     Romanian
+        KDLM064:     Russian
+        KDLM065:     Scandinavian
+        KDLM066:     Scotch-Irish
+        KDLM067:     Scottish
+        KDLM068:     Serbian
+        KDLM069:     Slavic
+        KDLM070:     Slovak
+        KDLM071:     Slovene
+        KDLM072:     Soviet Union
+        KDLM073:     Subsaharan African
+        KDLM074:     Subsaharan African: Cape Verdean
+        KDLM075:     Subsaharan African: Ethiopian
+        KDLM076:     Subsaharan African: Ghanaian
+        KDLM077:     Subsaharan African: Kenyan
+        KDLM078:     Subsaharan African: Liberian
+        KDLM079:     Subsaharan African: Nigerian
+        KDLM080:     Subsaharan African: Senegalese
+        KDLM081:     Subsaharan African: Sierra Leonean
+        KDLM082:     Subsaharan African: Somalian
+        KDLM083:     Subsaharan African: South African
+        KDLM084:     Subsaharan African: Sudanese
+        KDLM085:     Subsaharan African: Ugandan
+        KDLM086:     Subsaharan African: Zimbabwean
+        KDLM087:     Subsaharan African: African
+        KDLM088:     Subsaharan African: Other Subsaharan African
+        KDLM089:     Swedish
+        KDLM090:     Swiss
+        KDLM091:     Turkish
+        KDLM092:     Ukrainian
+        KDLM093:     Welsh
+        KDLM094:     West Indian (except Hispanic groups)
+        KDLM095:     West Indian (except Hispanic groups): Bahamian
+        KDLM096:     West Indian (except Hispanic groups): Barbadian
+        KDLM097:     West Indian (except Hispanic groups): Belizean
+        KDLM098:     West Indian (except Hispanic groups): Bermudan
+        KDLM099:     West Indian (except Hispanic groups): British West Indian
+        KDLM100:     West Indian (except Hispanic groups): Dutch West Indian
+        KDLM101:     West Indian (except Hispanic groups): Haitian
+        KDLM102:     West Indian (except Hispanic groups): Jamaican
+        KDLM103:     West Indian (except Hispanic groups): Trinidadian and Tobagonian
+        KDLM104:     West Indian (except Hispanic groups): U.S. Virgin Islander
+        KDLM105:     West Indian (except Hispanic groups): West Indian
+        KDLM106:     West Indian (except Hispanic groups): Other West Indian
+        KDLM107:     Yugoslavian
+        KDLM108:     Other groups
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing NHGIS data (either tabular or GIS)
+  must cite it appropriately. The citation should include the following:
+
+    Minnesota Population Center. National Historical Geographic Information
+    System: Version 11.0 [Database]. Minneapolis: University of Minnesota. 2016.
+    http://doi.org/10.18128/D050.V11.0.
+
+* Publications and research reports employing school attendance areas data
+  (either tabular or GIS) must cite it appropriately. The citation should
+  include the following:
+
+    The College of William and Mary and the Minnesota Population Center.
+    School Attendance Boundary Information System (SABINS): Version 1.0.
+    Minneapolis, MN: University of Minnesota 2011.
+
+* If possible, citations should also include the URL for the NHGIS site:
+
+    https://www.nhgis.org/
+
+* If possible, citations involving school attendance areas should also include
+  the URL for the SABINS site:
+
+    http://www.sabinsdata.org/
+
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+Printed matter should be sent to:
+
+    NHGIS
+    Minnesota Population Center
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
+
+Send electronic material to: nhgis@umn.edu

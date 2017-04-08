@@ -1,0 +1,189 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0014_ds151_2000_state'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2000
+Geographic level: State
+Dataset:          2000 Census: SF 3a - Sample-Based Data [Areas Larger Than Block Groups]
+   NHGIS code:    2000_SF3a
+   NHGIS ID:      ds151
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+ 
+Tables:
+ 
+1. People with One or More Ancestry Categories Reported by Specified Ancestries Tallied
+   Universe:    People with One or More Ancestry Categories Reported
+   Source code: NPCT018B
+   NHGIS code:  GV5
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        REGIONA:     Region Code
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTYA:     County Code
+        CTY_SUBA:    County Subdivision Code
+        PLACEA:      Place Code
+        TRACTA:      Census Tract Code
+        TRBL_CTA:    Tribal Census Tract Code
+        TRBL_BGA:    Tribal Block Group Code
+        BLCK_GRPA:   Block Group Code
+        C_CITYA:     Consolidated City Code
+        TRUSTA:      American Indian Reservation [trust lands only] Code
+        RES_ONLYA:   American Indian Reservation [excluding trust lands] Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        TRBL_SUBA:   Tribal Subdivision Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        MSA_CMSAA:   Metropolitan Statistical Area/Consolidated Metropolitan Statistical Area Code
+        PMSAA:       Primary Metropolitan Statistical Area Code
+        NECMAA:      New England County Metropolitan Area Code
+        URB_AREAA:   Urban Area Code
+        URBRURALA:   Urban/Rural Code
+        CD106A:      Congressional District (106th) Code
+        CD108A:      Congressional District (108th) Code
+        CD109A:      Congressional District (109th) Code
+        ZIP3A:       3-Digit Zip Code Tabulation Area Code
+        ZCTAA:       5-Digit Zip Code Tabulation Area Code
+        NAME:        Area Name-Legal/Statistical Area Description (LSAD) Term-Part Indicator
+ 
+Breakdown:
+    Geographic Subarea: Total area (00)
+ 
+    Table 1:     People with One or More Ancestry Categories Reported by Specified Ancestries Tallied
+    Universe:    People with One or More Ancestry Categories Reported
+    Source code: NPCT018B
+    NHGIS code:  GV5
+        GV5001:      Acadian/Cajun
+        GV5002:      Afghan
+        GV5003:      Albanian
+        GV5004:      Alsatian
+        GV5005:      Arab
+        GV5006:      Armenian
+        GV5007:      Assyrian/Chaldean/Syriac
+        GV5008:      Australian
+        GV5009:      Austrian
+        GV5010:      Basque
+        GV5011:      Belgian
+        GV5012:      Brazilian
+        GV5013:      British
+        GV5014:      Bulgarian
+        GV5015:      Canadian
+        GV5016:      Carpatho Rusyn
+        GV5017:      Celtic
+        GV5018:      Croatian
+        GV5019:      Cypriot
+        GV5020:      Czech
+        GV5021:      Czechoslovakian
+        GV5022:      Danish
+        GV5023:      Dutch
+        GV5024:      Eastern European
+        GV5025:      English
+        GV5026:      Estonian
+        GV5027:      European
+        GV5028:      Finnish
+        GV5029:      French (except Basque)
+        GV5030:      French Canadian
+        GV5031:      German
+        GV5032:      German Russian
+        GV5033:      Greek
+        GV5034:      Guyanese
+        GV5035:      Hungarian
+        GV5036:      Icelander
+        GV5037:      Iranian
+        GV5038:      Irish
+        GV5039:      Israeli
+        GV5040:      Italian
+        GV5041:      Latvian
+        GV5042:      Lithuanian
+        GV5043:      Luxemburger
+        GV5044:      Macedonian
+        GV5045:      Maltese
+        GV5046:      New Zealander
+        GV5047:      Northern European
+        GV5048:      Norwegian
+        GV5049:      Pennsylvania German
+        GV5050:      Polish
+        GV5051:      Portuguese
+        GV5052:      Romanian
+        GV5053:      Russian
+        GV5054:      Scandinavian
+        GV5055:      Scotch-Irish
+        GV5056:      Scottish
+        GV5057:      Serbian
+        GV5058:      Slavic
+        GV5059:      Slovak
+        GV5060:      Slovene
+        GV5061:      Soviet Union
+        GV5062:      Subsaharan African
+        GV5063:      Swedish
+        GV5064:      Swiss
+        GV5065:      Turkish
+        GV5066:      Ukrainian
+        GV5067:      United States or American
+        GV5068:      Welsh
+        GV5069:      West Indian (excluding Hispanic groups)
+        GV5070:      Yugoslavian
+        GV5071:      Other groups
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* Publications and research reports employing NHGIS data (either tabular or GIS)
+  must cite it appropriately. The citation should include the following:
+
+    Minnesota Population Center. National Historical Geographic Information
+    System: Version 11.0 [Database]. Minneapolis: University of Minnesota. 2016.
+    http://doi.org/10.18128/D050.V11.0.
+
+* Publications and research reports employing school attendance areas data
+  (either tabular or GIS) must cite it appropriately. The citation should
+  include the following:
+
+    The College of William and Mary and the Minnesota Population Center.
+    School Attendance Boundary Information System (SABINS): Version 1.0.
+    Minneapolis, MN: University of Minnesota 2011.
+
+* If possible, citations should also include the URL for the NHGIS site:
+
+    https://www.nhgis.org/
+
+* If possible, citations involving school attendance areas should also include
+  the URL for the SABINS site:
+
+    http://www.sabinsdata.org/
+
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+Printed matter should be sent to:
+
+    NHGIS
+    Minnesota Population Center
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
+
+Send electronic material to: nhgis@umn.edu
