@@ -28,7 +28,7 @@ states_transform <- state_map %>%
 ```
 
 
-```{r}
+```{r, echo=FALSE, warning=FALSE}
 states_with_data_1990 <- states_transform %>% 
   left_join(census_1990, by = c("STATENAM" = "STATE"))
 
@@ -45,7 +45,7 @@ leaflet(states_with_data_1990) %>%
             title = "Cajuns in 1990")
 ```
 
-```{r}
+```{r, echo=FALSE, warning=FALSE}
 states_with_data_2000 <- states_transform %>% 
   left_join(census_2000, by = c("STATENAM" = "STATE"))
 
@@ -63,7 +63,7 @@ leaflet(states_with_data_2000) %>%
 ```
 
 
-```{r}
+```{r, echo=FALSE, warning=FALSE}
 states_with_data_2006 <- states_transform %>% 
   left_join(census_2006, by = c("STATENAM" = "STATE"))
 
@@ -80,7 +80,7 @@ leaflet(states_with_data_2006) %>%
             title = "Cajuns in 2006")
 ```
 
-```{r}
+```{r, echo=FALSE, warning=FALSE}
 states_with_data_2008 <- states_transform %>% 
   left_join(census_2008, by = c("STATENAM" = "STATE"))
 
@@ -97,7 +97,7 @@ leaflet(states_with_data_2008) %>%
             title = "Cajuns in 2008")
 ```
 
-```{r}
+```{r, echo=FALSE, warning=FALSE}
 states_with_data_2010 <- states_transform %>% 
   left_join(census_2010, by = c("STATENAM" = "STATE"))
 
