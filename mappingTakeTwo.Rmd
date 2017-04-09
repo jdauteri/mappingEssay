@@ -45,22 +45,7 @@ leaflet(states_with_data_1990) %>%
             title = "Cajuns in 1990")
 ```
 
-```{r, echo=FALSE, warning=FALSE}
-states_with_data_2000 <- states_transform %>% 
-  left_join(census_2000, by = c("STATENAM" = "STATE"))
 
-binpal <- colorBin("Reds", states_with_data_2000$GV5001, 3, pretty = FALSE)
-
-leaflet(states_with_data_2000) %>% 
-  addPolygons(fillColor = ~binpal(GV5001),
-              fillOpacity = 1,
-              color = "black",
-              opacity = 1,
-              weight = 1) %>% 
-  addLegend("bottomright", pal = binpal,
-            values = ~GV5001, opacity = 1,
-            title = "Cajuns in 2000")
-```
 
 
 ```{r, echo=FALSE, warning=FALSE}
