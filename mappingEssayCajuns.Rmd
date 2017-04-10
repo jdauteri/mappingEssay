@@ -1,0 +1,123 @@
+---
+title: "Cajun Identity and the American Community Survey"
+author: "Jessica Dauterive"
+date: "4/10/2017"
+output: html_document
+---
+Beginning in the 1980s, the United States Census Bureau instituted a new program to collect data about citizens throughout the decades between each census. This project, the American Community Survey (ACS), collects various demographic information and compiles it into a series of estimates and reports. This data is then made available and used primarily for funding allocation by governmental agencies. In 2000, the results of the ACS survey caused a stir in Southwest Louisiana, reporting that the number of Cajuns in the ACS estimates had dropped by 400,000 since the previous year. These findings raised several questions from several different groups. The Council for the Development of French in Louisiana (CODOFIL), a government-backed organization that has lobbied for ethnic-based funding and has instituted a range of French-language education programs throughout the state, worried that this would devalue their efforts and suggest the failings of their French immersion programs. Demographers and historians wondered if this might signal the pendulum swing from decades of resurging Cajun pride to a waning interest in ethnicity in favor of American consumerism. Local Louisianians were perplexed by the findings, but not wholly concerned, as one widely circulated quote by a Cajun woman in a *New York Times* article indicates: "we know we're here."[^1] This essay seeks to explore Cajun identity in the ACS since this fallout, examining the five-year data from the years 2006-2010. It will begin with a note on methodology (of the census and how this essay uses census data), and then interrogate the argument by Louisiana scholars like Jacques Henry that the census itself might be responsible for the "disappearance" of Cajuns in the twenty-first century.[^2]
+
+```{r setup, include=FALSE}
+library(sf)
+library(leaflet)
+library(tidyverse)
+
+state_map <- st_read("US_state_2000.shp", stringsAsFactors = FALSE)
+
+states_transform <- state_map %>% 
+  filter(STATENAM %in% c("Louisiana", "Texas", "Mississippi", "Alabama", "Florida")) %>%
+  st_transform(4326)
+
+census_1990 <- read_csv("nhgis0014_ds124_1990_state.csv")
+census_2006 <- read_csv("nhgis0011_ds177_20105_2010_state.csv")
+```
+
+The ACS has faced much criticism not only for asking questions that some consider an invasion of privacy, but for its misleading and inconsistent form of questioning. The question for ancestry has been the same since 1990: "What is this person's ancestry or ethnic origin?," with a blank space to fill in the answer. What has changed, however, are the examples given below the space. In 1990, "Cajun" was listed as a possible choice of ethnic origin. However, Cajun was removed in 2000 and may have played a role in the response since. By using the five-year data from 2006-2010, these maps will represent the most reliable and widely sampled datasets for this period. However, it must be considered that the ACS has developed inconsistent ways of recording people who identify with multiple ancestries, by providing estimates for "Single" and "Multiple" respondents, as well as for "First" and "Second" ancestries. This paper will consider only the totals of all respondents identifying with a paricular ancestry, whether single, multiple, first, or second. It should also be noted that while this paper examines the most popular ethnic categories, an unknown number of respondents might have been lumped into "Other" category. Finally, through examining all the Gulf Coast states, this essay will analyze the distribution of Cajuns throughout the region in order to reveal any insight that is missed by only focusing on Louisiana.
+
+To begin, the following three maps represent the estimates of respondents in 1990 who reported as "Acadian/Cajun," "French Canadian," and the combined totals of these two groups. 
+```{r, echo=FALSE, warning=FALSE}
+states_with_data_1990 <- states_transform %>% 
+  left_join(census_1990, by = c("STATENAM" = "STATE")) %>% 
+  mutate(total_Cajuns = E8M001 + E8M037) %>% 
+  select(total_Cajuns, E8M001, E8M037)
+
+binpal <- colorBin("Reds", states_with_data_1990$E8M001, 3, pretty = FALSE)
+leaflet(states_with_data_1990) %>% 
+  addPolygons(fillColor = ~binpal(E8M001),
+              fillOpacity = 1,
+              color = "black",
+              opacity = 1,
+              weight = 1) %>% 
+  addLegend("bottomright", pal = binpal,
+            values = ~E8M001, opacity = 1,
+            title = "Gulf Coast Respondents Who Identified as Acadian/Cajun on the ACS, 1990")
+
+binpal <- colorBin("Reds", states_with_data_1990$E8M037, 3, pretty = FALSE)
+leaflet(states_with_data_1990) %>% 
+  addPolygons(fillColor = ~binpal(E8M037),
+              fillOpacity = 1,
+              color = "black",
+              opacity = 1,
+              weight = 1) %>% 
+  addLegend("bottomright", pal = binpal,
+            values = ~E8M037, opacity = 1,
+            title = "Gulf Coast Respondents Who Identified as French Canadian on the ACS, 1990")
+
+binpal <- colorBin("Reds", states_with_data_1990$total_Cajuns, 3, pretty = FALSE)
+leaflet(states_with_data_1990) %>% 
+  addPolygons(fillColor = ~binpal(total_Cajuns),
+              fillOpacity = 1,
+              color = "black",
+              opacity = 1,
+              weight = 1) %>% 
+  addLegend("bottomright", pal = binpal,
+            values = ~total_Cajuns, opacity = 1,
+            title = "Gulf Coast Respondents Who Identified as Acadian/Cajun or French Canadian on the ACS, 1990")
+```
+
+Not surprisingly, the majority of those who identified as either "Acadian/Cajun" or "French Canadian" in the ACS were in Louisiana, with the former group far outweighing the latter. This is the first year that Cajun identity became a coded category in the census data, rather than lumped into "Other," indicating a rise of response from this group. It should be reiterated that 1990 was the first year that "Cajun" appeared as an example of ancestry, which some scholars believe led to a heightened response. However, it seems significant that the category would be listed as "Acadian/Cajun" rather than just "Cajun," because Cajun is traditionally understood as the term for the American ethnic group and is typically the way Southwest Louisianians self-identify. 
+
+Comparing the maps above with the following maps representing the number of respondents from 2006-2010 who identified as "Cajun", "French Canadian", and the total of both, reveals some suggestions for further research.
+
+```{r, echo=FALSE, warning=FALSE}
+states_with_data_2006 <- states_transform %>% 
+  left_join(census_2006, by = c("STATENAM" = "STATE")) %>% 
+  mutate(total_Cajuns = JV3E041 + JV3E025) %>% 
+  select(total_Cajuns, JV3E041, JV3E025)
+
+binpal <- colorBin("Reds", states_with_data_2006$JV3E025, 3, pretty = FALSE)
+leaflet(states_with_data_2006) %>% 
+  addPolygons(fillColor = ~binpal(JV3E025),
+              fillOpacity = 1,
+              color = "black",
+              opacity = 1,
+              weight = 1) %>% 
+  addLegend("bottomright", pal = binpal,
+            values = ~JV3E025, opacity = 1,
+            title = "Gulf Coast Respondents Who Identified as Cajun on the ACS, 2006-2010")
+
+binpal <- colorBin("Reds", states_with_data_2006$JV3E041, 3, pretty = FALSE)
+leaflet(states_with_data_2006) %>% 
+  addPolygons(fillColor = ~binpal(JV3E041),
+              fillOpacity = 1,
+              color = "black",
+              opacity = 1,
+              weight = 1) %>% 
+  addLegend("bottomright", pal = binpal,
+            values = ~JV3E041, opacity = 1,
+            title = "Gulf Coast Respondents Who Identified as French Canadian on the ACS, 2006-2010")
+
+
+binpal <- colorBin("Reds", states_with_data_2006$total_Cajuns, 3, pretty = FALSE)
+leaflet(states_with_data_2006) %>% 
+  addPolygons(fillColor = ~binpal(total_Cajuns),
+              fillOpacity = 1,
+              color = "black",
+              opacity = 1,
+              weight = 1) %>% 
+  addLegend("bottomright", pal = binpal,
+            values = ~total_Cajuns, opacity = 1,
+            title = "Gulf Coast Respondents Who Identified as Cajun or French Canadian on the ACS, 2006-2010")
+```
+
+First, the distribution across the region is compelling. On both sets of maps, the presence of Florida as one of the highest concentrations of Cajun respondents is interesting. Florida is not typically a place considered in Cajun studies, and this suggests taking a closer look. However, it is possible that the number of Louisiana residents who own rental proerties and second homes along the Gulf Coast beach communites in Florida could account for this response. The amount of Cajun-identifying Texans in this data is not particularly suprising, as there is a long history of Louisiana Cajuns migrating into Texas due to the oil industry. However, it is worth considering why Texan Cajuns would consider themselves overwhelming French Canadian, rather than Cajun (or, even, "Acadian/Cajun").
+
+At this point it is worth considering the distinction between these labels broadly. The labels Acadian and French Canadian indicate a further ancestral reach, a reference to the Acadian settlement in Nova Scotia before the Grand Derrangement in 1775 drove the community from Canada into Louisiana. This moment remains a pivotal moment in Cajun history and memory. However, since the 1960s (and certainly by the 1980s) the overwhelming identifier has been Cajun, rather than Acadian or French Canadian, signalling an attachment to a paricular kind of culture, music, and foodways rooted in southwest Louisiana. 
+
+It also must be noted that the total amounts are still much lower than they were before the findings of the 2000 census. There have been several suggestions, both in particular relation to Cajun ancestry and the ancestry census data more broadly, that attempt to explain a decline in ancestral identification. One explanation is often called the "example effect," and would suggest that the inclusion of Cajun as an example ancestry in 1990, but not since 2000, would result in just the decline we are seeing.[^3] However, enough people identified as both Acadian/Cajun in the 1990s census to question this theory. If it really had the kind of leading influence suggested, wouldn't this category simply be recorded as Cajun?
+
+Jacques Henry also suggests a social theory to explain a general rise of indicating "American" as ancestry (and conversely, the decline of indicating "Cajun"). He makes the case that a rising sentiment of Americanism and consumer culture might be responsible for this shift, and alludes to the influence of September 11, 2001 as a moment when people began to choose American patriotism over personal ancestry.[^4] In this way, the ACS had the ability transform a nationality into an ethnic origin. Although this is compelling, and can perhaps be considered a major factor in this demographic shift, the amount of people from 2006-2010 who chose to identify as French Canadian rather than Cajun complicates the assertion that people were distancing themselves from pre-American roots. On the other hand, the decline of Cajun ancestry in the ACS could also be read as an indication that many respondents in the post-9/11 world did, in fact, align with an American identity over an ethnic one. Whatever the case, these maps suggest promising lines of further study and reflect the long tradition of census data creating and codifying identity in problematic ways.
+
+[^1]: Rick Bragg, "Reported to be Vanishing, Cajuns Give a Sharp, 'Non'," *New York Times*, August 16, 2001.
+[^2]: Jacques Henry, "What Has Become of the Cajuns of Yore?," *Louisiana History: The Journal of the Louisiana Historical Association,* 46, (Autumn 2005): 465-481.
+[^3]: Henry, "What Has Become of the Cajuns of Yore?," 467.
+[^4]: Henry, "What Has Become of the Cajuns of Yore?," 469.
